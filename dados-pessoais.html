@@ -124,11 +124,11 @@
             <div class="mb-4">
                 <label class="form-label bloco-titulo d-block">O candidato é transgênero e deseja ser tratado pelo nome social?</label>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nome_social" id="nome_social_nao" value="Nao" checked>
+                    <input class="form-check-input" type="radio" name="nome_social" id="nome_social_nao" value="Nao" required >
                     <label class="form-check-label" for="nome_social_nao">Não</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="nome_social" id="nome_social_sim" value="Sim">
+                    <input class="form-check-input" type="radio" name="nome_social" id="nome_social_sim" value="Sim" required>
                     <label class="form-check-label" for="nome_social_sim">Sim</label>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                     <label class="form-check-label" for="gemeo_sim">Sim</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="irmao_gemeo" id="gemeo_nao" value="Nao" checked>
+                    <input class="form-check-input" type="radio" name="irmao_gemeo" id="gemeo_nao" value="Nao" required>
                     <label class="form-check-label" for="gemeo_nao">Não</label>
                 </div>
             </div>
@@ -212,7 +212,7 @@
             <input type="text" class="form-control mb-3 campo-input" required>
 
             <label class="form-label bloco-titulo">Complemento</label>
-            <input type="text" class="form-control mb-3 campo-input">
+            <input type="text" class="form-control mb-3 campo-input" required>
 
             <label class="form-label bloco-titulo">Bairro<span class="text-danger">*</span></label>
             <input type="text" class="form-control mb-3 campo-input" required>
@@ -224,13 +224,13 @@
             <select class="form-select mb-4 campo-select" required><option selected>Selecione...</option></select>
 
             <label class="form-label bloco-titulo">Telefone</label>
-            <input type="tel" class="form-control mb-3 campo-input" placeholder="Ex. (11) 1234-1234">
+            <input type="tel" class="form-control mb-3 campo-input" placeholder="Ex. (11) 1234-1234" required>
 
             <label class="form-label bloco-titulo">Celular</label>
-            <input type="tel" class="form-control mb-3 campo-input" placeholder="Ex. (11) 1234-1234">
+            <input type="tel" class="form-control mb-3 campo-input" placeholder="Ex. (11) 1234-1234" required>
             
             <div class="form-check mb-4">
-                <input class="form-check-input" type="checkbox" id="receber_info">
+                <input class="form-check-input" type="checkbox" id="receber_info" required>
                 <label class="form-check-label" for="receber_info" style="font-size: 14px;">
                     Aceito receber por e-mail, SMS e WhatsApp informações sobre outros processos/concursos realizados pela FAT
                 </label>
@@ -266,6 +266,12 @@
                     <option>Deficiência Física</option>
                     <option>Deficiência Auditiva</option>
                     <option>Lactante</option>
+                   <option>Deficiência Visual</option>
+                   <option>Espectro Autista</option>
+                   <option>Síndrome de Down</option>
+                   <option>Deficiência Intelectual</option>
+                   <option>Deficiência Múltipla</option>
+                   <option>Problemas Psicossociais</option>
                  </select>
             </div>
             
@@ -319,3 +325,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
